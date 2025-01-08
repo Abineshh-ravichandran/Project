@@ -1,0 +1,196 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.intro {
+    color: #ccc;
+    font-size: 1.1em;
+}
+
+#progress-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#progress {
+    width: 0;
+    height: 10px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: width 0.5s ease-in-out;
+}
+
+#question-container {
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#question {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #333;
+    border: 2px solid #4a4a4a;
+    color: #fff;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.selected {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-color: #0072ff;
+}
+
+#next-btn {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #fff;
+    display: block;
+    margin: 20px auto;
+    border: none;
+}
+
+#next-btn:hover {
+    background: linear-gradient(90deg, #ff9a20, #f54e91);
+}
+
+#results {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#results h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#results p {
+    margin-bottom: 15px;
+}
+
+.well-being-state {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.well-being-state strong {
+    font-size: 1.4em;
+    color: #00c6ff;
+    text-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+.doctor-info {
+    background: linear-gradient(45deg, #2b2b2b, #3a3a3a);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid #4a4a4a;
+}
+
+.doctor-info h3 {
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+.doctor-info p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.disclaimer {
+    font-style: italic;
+    color: #999;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+#restart-btn {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+}
+
+#restart-btn:hover {
+    background: linear-gradient(90deg, #20d6ff, #2082ff);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #999;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #00c6ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0072ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+}
